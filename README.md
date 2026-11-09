@@ -124,6 +124,10 @@ You can also use the live model in either command-line implementation. After set
 
 The tickets and runbooks are bundled fixtures. Live model wording and tool choices can vary. Use the scripted command-line demo if you want to reproduce a particular path in class.
 
+## Week 1 harness walkthrough
+
+The [OpenWorker and Hermes class guide](docs/sunday_class_openworker.html) follows the same concepts through two real agent codebases, with code excerpts and links to the exact source lines. From a cloned or extracted copy of this repo, open the HTML file in your browser. From GitHub, open the file and choose **Download raw file**, then open the downloaded copy.
+
 ## Where to look in the code
 
 | Question | Files to open |

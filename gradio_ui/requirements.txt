@@ -1,0 +1,2 @@
+-r ../langgraph_version/requirements.txt
+gradio==6.31.0

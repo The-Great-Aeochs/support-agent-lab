@@ -1,0 +1,33 @@
+Help me set up, run, and understand the Support Agent Lab.
+
+Repository: https://github.com/The-Great-Aeochs/support-agent-lab
+
+Start by reading README.md. If the repository is already open, work from its
+root. If it is absent, ask where I want to put it before cloning. I may be
+new to Python. Explain briefly what each command does, where to run it, and
+what successful output looks like.
+
+1. Check my OS, shell, and Python version. Use Python 3.12 or 3.13 and the
+   project-local .venv. Follow the README to install
+   gradio_ui/requirements.txt into that environment.
+2. Run ticket 43 with both plain_python/main.py and langgraph_version/main.py.
+   The default scripted mode works without an API key. Check that both
+   workflows call get_ticket and get_runbook and finish without escalation.
+   Then run eval_workflows.py with the same environment.
+3. Show me how to run ticket 42 with --context-chars 100 and --trace.
+   Explain the approval prompt and show how to decline it with n. In the
+   trace, point out what gets compacted and what stays in application state.
+4. If I want the live UI, have me enter my own OPENAI_API_KEY in my terminal
+   using the README's hidden prompt. Keep the key out of chat, command
+   arguments, files, logs, and commits. Start gradio_ui/app.py from the same
+   terminal and give me the URL printed by the app. Explain the Architecture,
+   Investigate, and Compare tabs.
+5. Use workflow.py in each implementation to show the loop versus the graph.
+   Then point me to models.py for the request, tools.py for MCP, state.py for
+   compaction, and steps.py for approval. Use real file names and show the
+   relevant lines when explaining the code.
+
+Keep the demo on the bundled ticket fixtures. An escalation proposal always
+goes through the human approval step. If any setup command fails, explain the
+specific error and the next step in plain language. Preserve my source files
+unless I ask for a change.

@@ -1,0 +1,12 @@
+.DS_Store
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.env
+.env.*
+*.env
+.vscode/
+.idea/
+/trace-*.html
+!/trace-demo.html
